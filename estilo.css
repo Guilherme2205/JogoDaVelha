@@ -1,22 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    font-family: 'Comic Sans MS', fantasy;
+}
+
+#img1{
+    margin: 5px;
+    width: 100%;
+}
+
 h1.titulo{
     text-align: center;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+.placar{
+    background-color: #8B008B;
+    float: right;
+}
+
+.func{
+    background-color: #8B008B;
+    float: left;
 }
 
 .box-principal{
     width: 502px;
     display: flex;
     flex-wrap: wrap;
-    }
+    margin: auto;
+}
 
 .box-1{
     width: 164px;
     height: 164px;
-    background-color: blue;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
 }
@@ -24,7 +41,6 @@ body{
 .box-2{
     width: 164px;
     height: 164px;
-    background-color: red;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
 }
@@ -32,14 +48,12 @@ body{
 .box-3{
     width: 164px;
     height: 164px;
-    background-color: yellow;
     border-bottom: 5px solid black;
 }
 
 .box-4{
     width: 164px;
     height: 164px;
-    background-color: green;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
 }
@@ -47,7 +61,6 @@ body{
 .box-5{
     width: 164px;
     height: 164px;
-    background-color: #8B008B;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
 }
@@ -55,26 +68,22 @@ body{
 .box-6{
     width: 164px;
     height: 164px;
-    background-color: #DC143C;
     border-bottom: 5px solid black;
 }
 
 .box-7{
     width: 164px;
     height: 164px;
-    background-color: #F4A460;
     border-right: 5px solid black;
 }
 
 .box-8{
     width: 164px;
     height: 164px;
-    background-color: #00CED1;
     border-right: 5px solid black;
 }
 
 .box-9{
     width: 164px;
     height: 164px;
-    background-color: #696969;
 }
