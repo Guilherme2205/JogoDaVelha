@@ -4,6 +4,17 @@
     border: 0;
 }
 
+button{
+    background-color: aqua;
+}
+
+img#velhaimg{
+    width: 280px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
 body{
     background-color: #D3D3D3;
     font-family: 'Comic Sans MS', fantasy;
@@ -27,20 +38,20 @@ h1.titulo{
 }
 
 #placar{
-    background-color: #8B008B;
     position: absolute;
     top: 0;
     left: 80%;
+    font-size: 20px;
 }
 
 #func{
-    background-color: #8B008B;
     float: left;
     position: absolute;
     top: 0;
 }
 
 .box-principal{
+    position: relative;
     width: 515px;
     display: flex;
     flex-wrap: wrap;

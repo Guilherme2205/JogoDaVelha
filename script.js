@@ -61,6 +61,7 @@ function novoJogo(){
     velha = 0;
     vet = [3,3,3,3,3,3,3,3,3];
     comecar = false;
+    document.getElementById("velhaimg").src = "";
 }
 
 function jogar(valor){
@@ -107,7 +108,7 @@ function jogar(valor){
     if(vencedor == 0)
         velha++;
     if(velha == 9){
-        alert("Deu velha");
+        document.getElementById("velhaimg").src = "images/vovo.gif";
         document.getElementById("velha").innerHTML = ++placarVelha;
     }
 }
