@@ -19,17 +19,17 @@
         <div onclick="jogar('7')" id="box-8"><img id="7" src=""/></div>
         <div onclick="jogar('8')" id="box-9"><img id="8" src=""/></div>
     </div>
-        <!--<div class="placar">
+        <div id="placar">
             <p class="placarh2">Placar</p>
-            <label>X: </label><label class="x">0 </label><br/><br/>
-            <label>O: </label><label class="x">0 </label><br/><br/>
-            <input type="button" value="Zerar placar" name="zerar" classe="zerar"/>
+            <label>X: </label><label id="x">0 </label><br/><br/>
+            <label>O: </label><label id="o">0 </label><br/><br/>
+            <input type="button" onclick="zerarPlacar()" value="ZerarPlacar" name="zerar" classe="zerar"/>
         </div>
         <div class="func">
                 <label>Começar com:  </label>
-                <input type="button" value="X" name="x" classe="x"/>
-                <input type="button" value="O" name="O" classe="O"/><br/><br/>
-                <input type="button" value="Limpar jogo" name="limpar" classe="limpar"/>
-        </div>-->
+                <input type="button" onclick="comecarX()" value="X" name="x" classe="x"/>
+                <input type="button" onclick="comecarO()" value="O" name="O" classe="O"/><br/><br/>
+                <input type="button" onclick="limpar()" value="Novo jogo" name="limpar" classe="limpar"/>
+        </div>
 </body>
 </html>

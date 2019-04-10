@@ -15,7 +15,7 @@ h1.titulo{
     text-align: center;
 }
 
-.placar{
+#placar{
     background-color: #8B008B;
     float: right;
 }
