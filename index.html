@@ -7,7 +7,22 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Jogo da velha</h1>
+    <div class="cabecalho">
+        <h1 class="titulo">Jogo da velha</h1>
+        <div id="placar">
+            <p class="placarh2">Placar</p>
+            <label>X: </label><label id="x">0 | </label>
+            <label>O: </label><label id="o">0 | </label>
+            <label>Velha: </label><label id="velha">0</label><br/>
+            <input type="button" onclick="zerarPlacar()" value="ZerarPlacar" name="zerar" classe="zerar"/>
+        </div>
+        <div id="func">
+                <label>Começar com:  </label>
+                <input type="button" onclick="comecarX()" value="X" name="x" classe="x"/>
+                <input type="button" onclick="comecarO()" value="O" name="O" classe="O"/><br/><br/>
+                <input type="button" onclick="novoJogo()" value="Novo Jogo" name="limpar" classe="limpar"/>
+        </div>
+    </div>
     <div class="box-principal">
         <div onclick="jogar('0')" id="box-1"><img id="0" src=""/></div>
         <div onclick="jogar('1')" id="box-2"><img id="1" src=""/></div>
@@ -19,17 +34,5 @@
         <div onclick="jogar('7')" id="box-8"><img id="7" src=""/></div>
         <div onclick="jogar('8')" id="box-9"><img id="8" src=""/></div>
     </div>
-        <div id="placar">
-            <p class="placarh2">Placar</p>
-            <label>X: </label><label id="x">0 </label><br/><br/>
-            <label>O: </label><label id="o">0 </label><br/><br/>
-            <input type="button" onclick="zerarPlacar()" value="ZerarPlacar" name="zerar" classe="zerar"/>
-        </div>
-        <div class="func">
-                <label>Começar com:  </label>
-                <input type="button" onclick="comecarX()" value="X" name="x" classe="x"/>
-                <input type="button" onclick="comecarO()" value="O" name="O" classe="O"/><br/><br/>
-                <input type="button" onclick="limpar()" value="Novo jogo" name="limpar" classe="limpar"/>
-        </div>
 </body>
 </html>
