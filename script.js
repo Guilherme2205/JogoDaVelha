@@ -25,8 +25,8 @@ function zerarPlacar(){
     x = 0;
     o = 0;
     placarVelha = 0;
-    document.getElementById("x").innerHTML = x;
-    document.getElementById("o").innerHTML = o;
+    document.getElementById("x").innerHTML = x + " |";
+    document.getElementById("o").innerHTML = o + " |";
     document.getElementById("velha").innerHTML = placarVelha;
 }
 

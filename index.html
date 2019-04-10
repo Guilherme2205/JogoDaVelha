@@ -7,21 +7,19 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <div class="sombra">
+        
+    </div>
     <div class="cabecalho">
         <h1 class="titulo">Jogo da velha</h1>
         <div id="placar">
-            <p class="placarh2">PLACAR</p>
+            <p class="placarp">PLACAR</p>
             <label>X: </label><label id="x">0 | </label>
             <label>O: </label><label id="o">0 | </label>
             <label>Velha: </label><label id="velha">0</label><br/>
             <button type="button" onclick="zerarPlacar()" name="zerar" classe="zerar">Zerar Placar</button>
         </div>
-        <div id="func">
-                <label>COMEÇAR COM:  </label>
-                <button type="button" onclick="comecarX()" name="x" classe="x">X</button>
-                <button type="button" onclick="comecarO()" name="O" classe="O">O</button><br/>
-                <button type="button" onclick="novoJogo()" name="limpar" classe="limpar">Novo Jogo</button>
-        </div>
+        
     </div>
     <div class="box-principal">
         <div onclick="jogar('0')" id="box-1"><img id="0" src=""/></div>
@@ -33,7 +31,12 @@
         <div onclick="jogar('6')" id="box-7"><img id="6" src=""/></div>
         <div onclick="jogar('7')" id="box-8"><img id="7" src=""/></div>
         <div onclick="jogar('8')" id="box-9"><img id="8" src=""/></div>
-        <img id="velhaimg" src=""/>
+    </div>
+    <div id="func">
+        <label>COMEÇAR COM:  </label>
+        <button type="button" onclick="comecarX()" name="x" classe="x">X</button>
+        <button type="button" onclick="comecarO()" name="O" classe="O">O</button><br/>
+        <button type="button" onclick="novoJogo()" name="limpar" classe="limpar">Novo Jogo</button>
     </div>
 </body>
 </html>

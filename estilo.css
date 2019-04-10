@@ -6,6 +6,14 @@
 
 button{
     background-color: aqua;
+    border: none;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Comic Sans MS', fantasy;
+    border-radius: 5px;
 }
 
 img#velhaimg{
@@ -47,7 +55,8 @@ h1.titulo{
 #func{
     float: left;
     position: absolute;
-    top: 0;
+    top: 200px;
+    left:100px
 }
 
 .box-principal{
