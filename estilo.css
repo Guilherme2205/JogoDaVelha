@@ -4,33 +4,73 @@
     border: 0;
 }
 
+#sombra{
+    position: absolute;
+    margin-left: 26.5%;
+    display: none;
+    text-align: center;
+    color: #FF0000;
+    font-size: 45px;
+    font-weight: bold;
+}
+
 button{
-    background-color: aqua;
     border: none;
     padding: 8px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    font-family: 'Comic Sans MS', fantasy;
+    font-family: 'Comic Sans MS';
     border-radius: 5px;
+    cursor: pointer;
 }
 
-img#velhaimg{
-    width: 280px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+button#nJogo{
+    background-color: #222;
+    color: #FFF;
+    box-shadow: 0 4px 0 #696969;
+}
+
+button#nJogo:hover{
+    background-color: #000;
+}
+
+#nJogo:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+  }
+
+button#zerar{
+    background-color: #00FFFF;
+    box-shadow: 0 4px 0 #008B8B;
+}
+
+button#zerar:hover{
+    background-color:#40E0D0;
+}
+
+#zerar:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+  }
+
+img#imgvelha{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 body{
-    background-color: #D3D3D3;
+    background-color: #DCDCDC;
     font-family: 'Comic Sans MS', fantasy;
 }
 
 .cabecalho{
     margin: 0 0 20px 0 ;
-    padding: 10px;
+    padding: 15px;
     background-color: #00008B;
     color: #FFF;
 }
