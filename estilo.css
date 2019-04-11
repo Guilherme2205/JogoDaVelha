@@ -4,6 +4,20 @@
     border: 0;
 }
 
+.image{
+    display: none;
+}
+
+.linha{
+    position: absolute;
+    display: none;
+}
+
+#linha_v{
+    width: 60px;
+    height: 505px;
+}
+
 #sombra{
     position: absolute;
     margin-left: 26.5%;
@@ -45,6 +59,7 @@ button#nJogo:hover{
 button#zerar{
     background-color: #00FFFF;
     box-shadow: 0 4px 0 #008B8B;
+    margin-top: 5px;
 }
 
 button#zerar:hover{

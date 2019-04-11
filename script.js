@@ -55,6 +55,7 @@ function comecarO(){
 function novoJogo(){
     for(var i = 0; i < 9; i++){
         document.getElementById(i).src = "";
+        document.getElementById(i).style.display = "none";
     }
     cont = 2;
     vencedor = 0;
@@ -62,18 +63,22 @@ function novoJogo(){
     vet = [3,3,3,3,3,3,3,3,3];
     comecar = false;
     document.getElementById("sombra").style.display = "none";
+    document.getElementById("linha_horizontal").style.display = "none";
+    document.getElementById("linha_vertical").style.display = "none";
 }
 
-function jogar(valor){
-    if(cont % 2 == 0 && vet[valor] == 3 && vencedor == 0){
-        document.getElementById(valor).src = "images/x.png";
+function jogar(id){
+    if(cont % 2 == 0 && vet[id] == 3 && vencedor == 0){
+        document.getElementById(id).src = "images/x.png";
+        document.getElementById(id).style.display = "block";
         cont++;
-        vet[valor] = 1;
+        vet[id] = 1;
     }
-    else if(vet[valor] == 3 && vencedor == 0){
-        document.getElementById(valor).src = "images/o.png";
+    else if(vet[id] == 3 && vencedor == 0){
+        document.getElementById(id).src = "images/o.png";
+        document.getElementById(id).style.display = "block";
         cont++;
-        vet[valor] = 0;
+        vet[id] = 0;
     }
     else
         velha--;
@@ -81,20 +86,32 @@ function jogar(valor){
         for(var i = 0; i < 2; i++){
             if(vet[0] == i && vet[1] == i && vet[2] == i){
                 ganhou(i);
+                document.getElementById("linha_horizontal").style.display = "block";
+                document.getElementById("linha_horizontal").style.top = "13%";
             }
             else if(vet[3] == i && vet[4] == i && vet[5] == i){
                 ganhou(i);
+                document.getElementById("linha_horizontal").style.display = "block";
+                document.getElementById("linha_horizontal").style.top = "47%";
             }
             else if(vet[6] == i && vet[7] == i && vet[8] == i){
                 ganhou(i);
+                document.getElementById("linha_horizontal").style.display = "block";
+                document.getElementById("linha_horizontal").style.top = "81%";
             }
             else if(vet[0] == i && vet[3] == i && vet[6] == i){
+                document.getElementById("linha_vertical").style.display = "block";
+                document.getElementById("linha_vertical").style.left = "8.5%";
                 ganhou(i);
             }
             else if(vet[1] == i && vet[4] == i && vet[7] == i){
+                document.getElementById("linha_vertical").style.display = "block";
+                document.getElementById("linha_vertical").style.left = "42.5%";
                 ganhou(i);
             }
             else if(vet[2] == i && vet[5] == i && vet[8] == i){
+                document.getElementById("linha_vertical").style.display = "block";
+                document.getElementById("linha_vertical").style.left = "76%";
                 ganhou(i);
             }
             else if(vet[0] == i && vet[4] == i && vet[8] == i){
