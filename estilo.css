@@ -4,6 +4,16 @@
     border: 0;
 }
 
+body{
+    background-color: #DCDCDC;
+    font-family: 'Comic Sans MS', fantasy;
+}
+
+#vencedor{
+    font-size: 121px;
+    color: #FF0000;
+}
+
 .image{
     display: none;
 }
@@ -16,6 +26,16 @@
 #linha_v{
     width: 60px;
     height: 505px;
+}
+
+#linha_d1{
+    height: 500px;
+    width: 500px;
+}
+
+#linha_d2{
+    height: 500px;
+    width: 500px;
 }
 
 #sombra{
@@ -78,11 +98,6 @@ img#imgvelha{
     flex-wrap: wrap;
 }
 
-body{
-    background-color: #DCDCDC;
-    font-family: 'Comic Sans MS', fantasy;
-}
-
 .cabecalho{
     margin: 0 0 20px 0 ;
     padding: 15px;
@@ -114,7 +129,7 @@ h1.titulo{
     left:100px
 }
 
-.box-principal{
+#box-principal{
     position: relative;
     width: 515px;
     display: flex;
@@ -126,59 +141,43 @@ h1.titulo{
     font-size: 55px;
 }
 
-#box-1{
+.box{
     width: 164px;
     height: 164px;
+}
+
+#box-1{
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
 #box-2{
-    width: 164px;
-    height: 164px;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
 #box-3{
-    width: 164px;
-    height: 164px;
     border-bottom: 10px solid black;
 }
 
 #box-4{
-    width: 164px;
-    height: 164px;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
 #box-5{
-    width: 164px;
-    height: 164px;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
 #box-6{
-    width: 164px;
-    height: 164px;
     border-bottom: 10px solid black;
 }
 
 #box-7{
-    width: 164px;
-    height: 164px;
     border-right: 10px solid black;
 }
 
 #box-8{
-    width: 164px;
-    height: 164px;
     border-right: 10px solid black;
-}
-
-#box-9{
-    width: 164px;
-    height: 164px;
 }
