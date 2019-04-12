@@ -9,11 +9,28 @@ body{
     background-color: #DCDCDC;
     font-family: 'Comic Sans MS', fantasy;
 }
-/*Estilo da mensagem de vencedor*/
-#vencedor{
-    font-size: 117px;
-    color: #FF0000;
-    font-weight: bold;
+
+.cabecalho{
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    margin: 0 0 20px 0 ;
+    background-color: #00008B;
+    color: #FFF;
+}
+
+.titulo{
+    margin-left: 10%;
+    font-size: 55px;
+    display: inline;
+}
+
+#placar{
+    margin-left: 10%;
+    display: inline;
+    font-size: 20px;
 }
 /*Deixa todas as imagens de X e O invisíveis*/
 .image{
@@ -23,6 +40,12 @@ body{
 .invisible{
     position: absolute;
     display: none;
+}
+/*Estilo da mensagem de vencedor*/
+#vencedor{
+    font-size: 117px;
+    color: #FF0000;
+    font-weight: bold;
 }
 /*Linha vertical*/
 #linha_v{
@@ -59,23 +82,22 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*Estilo do botão novo jogo X e O*/
 button#novoJogo{
-    background-color: #222;
-    color: #FFF;
-    box-shadow: 0 4px 0 #696969;
+    background-color: #00FFFF;;
+    box-shadow: 0 4px 0 #008B8B;
 }
 
 button#novoJogo:hover{
-    background-color: #000;
+    background-color: #40E0D0;
 }
 
 #novoJogo:active{
     position:relative;
     top:5px;
     box-shadow:none;
-  }
-
+}
+/*Estilo do botão zerar placar*/
 button#zerar{
     background-color: #00FFFF;
     box-shadow: 0 4px 0 #008B8B;
@@ -92,35 +114,14 @@ button#zerar:hover{
     box-shadow:none;
   }
 
-.cabecalho{
-    margin: 0 0 20px 0 ;
-    padding: 15px;
-    background-color: #00008B;
-    color: #FFF;
-}
-
 img{
     margin: 5px;
     width: 100%;
 }
 
-
-h1.titulo{
-    text-align: center;
-}
-
-#placar{
-    position: absolute;
-    top: 0;
-    left: 80%;
-    font-size: 20px;
-}
-
 #opcoes{
-    float: left;
-    position: absolute;
-    top: 200px;
-    left:100px
+    display: inline;
+    margin-left: 10%
 }
 
 #box-principal{
@@ -129,10 +130,6 @@ h1.titulo{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-}
-
-.titulo{
-    font-size: 55px;
 }
 
 .box{

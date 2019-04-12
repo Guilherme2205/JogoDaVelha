@@ -8,6 +8,12 @@
 </head>
 <body>
     <div class="cabecalho">
+        <div id="opcoes">
+            <label>COMEÇAR COM:  </label>
+            <button type="button" onclick="comecarX()" name="x" id="novoJogo">X</button>
+            <button type="button" onclick="comecarO()" name="O" id="novoJogo">O</button><br/><br/>
+            <button type="button" onclick="novoJogo()" name="limpar" id="novoJogo">NOVO JOGO</button>
+        </div>
         <h1 class="titulo">Jogo da velha</h1>
         <div id="placar">
             <p class="placarp">PLACAR</p>
@@ -16,6 +22,7 @@
             <label>VELHA: </label><label id="velha">0</label><br/>
             <button type="button" onclick="zerarPlacar()" name="zerar" id="zerar">ZERAR PLACAR</button>
         </div>
+        
     </div>
     <div id="box-principal">
         <div onclick="jogar('0')" id="box-1" class="box"><img id="0" class="image" src=""/></div>
@@ -45,11 +52,6 @@
         </div>
         <div id="vencedor" class="invisible"></div>
     </div>
-    <div id="opcoes">
-        <label>COMEÇAR COM:  </label>
-        <button type="button" onclick="comecarX()" name="x" id="novoJogo">X</button>
-        <button type="button" onclick="comecarO()" name="O" id="novoJogo">O</button><br/><br/>
-        <button type="button" onclick="novoJogo()" name="limpar" id="novoJogo">NOVO JOGO</button>
-    </div>
+    
 </body>
 </html>
