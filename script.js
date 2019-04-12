@@ -76,7 +76,7 @@ function novoJogo(){
     velha = 0;
     vet = [3,3,3,3,3,3,3,3,3];
     comecar = false;
-    document.getElementById("sombra").style.display = "none";
+    document.getElementById("idvelha").style.display = "none";
     document.getElementById("linha_horizontal").style.display = "none";
     document.getElementById("linha_vertical").style.display = "none";
     document.getElementById("linha_diagonal1").style.display = "none";
@@ -152,7 +152,7 @@ function jogar(id){
     if(vencedor == 0)
         velha++;
     if(velha == 9){
-        document.getElementById("sombra").style.display = "block";
+        document.getElementById("idvelha").style.display = "block";
         document.getElementById("velha").innerHTML = ++placarVelha;
         opacidade();
     }

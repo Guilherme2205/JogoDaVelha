@@ -7,7 +7,6 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    
     <div class="cabecalho">
         <h1 class="titulo">Jogo da velha</h1>
         <div id="placar">
@@ -17,7 +16,6 @@
             <label>VELHA: </label><label id="velha">0</label><br/>
             <button type="button" onclick="zerarPlacar()" name="zerar" id="zerar">ZERAR PLACAR</button>
         </div>
-        
     </div>
     <div id="box-principal">
         <div onclick="jogar('0')" id="box-1" class="box"><img id="0" class="image" src=""/></div>
@@ -29,31 +27,29 @@
         <div onclick="jogar('6')" id="box-7" class="box"><img id="6" class="image" src=""/></div>
         <div onclick="jogar('7')" id="box-8" class="box"><img id="7" class="image" src=""/></div>
         <div onclick="jogar('8')" id="box-9" class="box"><img id="8" class="image" src=""/></div>
-        <div id="sombra">
-            <img id="imgvelha" src="images/vovo.png"/>
+        <div id="idvelha" class="invisible">
+            <img src="images/vovo.png"/>
             <p>DEU VELHA</p>
         </div>
-        <div id="linha_horizontal" class="linha">
+        <div id="linha_horizontal" class="invisible">
             <img id="linha_h" src="images/linha-horizontal.png"/>
         </div>
-        <div id="linha_vertical" class="linha">
+        <div id="linha_vertical" class="invisible">
             <img id="linha_v" src="images/linha-vertical.png"/>
         </div>
-        <div id="linha_diagonal1" class="linha">
+        <div id="linha_diagonal1" class="invisible">
             <img id="linha_d1" src="images/linha-diagonal1.png"/>
         </div>
-        <div id="linha_diagonal2" class="linha">
+        <div id="linha_diagonal2" class="invisible">
             <img id="linha_d2" src="images/linha-diagonal2.png"/>
         </div>
-        <div id="vencedor" class="linha">
-            <p id="pvencedor"></p>
-        </div>
+        <div id="vencedor" class="invisible"></div>
     </div>
-    <div id="func">
+    <div id="opcoes">
         <label>COMEÇAR COM:  </label>
-        <button type="button" onclick="comecarX()" name="x" id="nJogo">X</button>
-        <button type="button" onclick="comecarO()" name="O" id="nJogo">O</button><br/><br/>
-        <button type="button" onclick="novoJogo()" name="limpar" id="nJogo">NOVO JOGO</button>
+        <button type="button" onclick="comecarX()" name="x" id="novoJogo">X</button>
+        <button type="button" onclick="comecarO()" name="O" id="novoJogo">O</button><br/><br/>
+        <button type="button" onclick="novoJogo()" name="limpar" id="novoJogo">NOVO JOGO</button>
     </div>
 </body>
 </html>

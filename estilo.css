@@ -1,53 +1,53 @@
+/*Zerando valores da tela*/
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
-
+/*Definindo valores para o corpo da página*/
 body{
     background-color: #DCDCDC;
     font-family: 'Comic Sans MS', fantasy;
 }
-
+/*Estilo da mensagem de vencedor*/
 #vencedor{
-    font-size: 121px;
+    font-size: 117px;
     color: #FF0000;
+    font-weight: bold;
 }
-
+/*Deixa todas as imagens de X e O invisíveis*/
 .image{
     display: none;
 }
-
-.linha{
+/*Deixa as imagens de linhas e da velha invisíveis*/
+.invisible{
     position: absolute;
     display: none;
 }
-
+/*Linha vertical*/
 #linha_v{
     width: 60px;
     height: 505px;
 }
-
+/*Linha diagonal 1*/
 #linha_d1{
     height: 500px;
     width: 500px;
 }
-
+/*Linha diagonal 2*/
 #linha_d2{
     height: 500px;
     width: 500px;
 }
-
-#sombra{
-    position: absolute;
+/*Ajustando imagem da velha e mensagem de velha*/
+#idvelha{
     margin-left: 26.5%;
-    display: none;
     text-align: center;
     color: #FF0000;
     font-size: 45px;
     font-weight: bold;
 }
-
+/*Estilo do botão padrão*/
 button{
     border: none;
     padding: 8px 18px;
@@ -60,17 +60,17 @@ button{
     cursor: pointer;
 }
 
-button#nJogo{
+button#novoJogo{
     background-color: #222;
     color: #FFF;
     box-shadow: 0 4px 0 #696969;
 }
 
-button#nJogo:hover{
+button#novoJogo:hover{
     background-color: #000;
 }
 
-#nJogo:active{
+#novoJogo:active{
     position:relative;
     top:5px;
     box-shadow:none;
@@ -91,12 +91,6 @@ button#zerar:hover{
     top:5px;
     box-shadow:none;
   }
-
-img#imgvelha{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .cabecalho{
     margin: 0 0 20px 0 ;
@@ -122,7 +116,7 @@ h1.titulo{
     font-size: 20px;
 }
 
-#func{
+#opcoes{
     float: left;
     position: absolute;
     top: 200px;
